@@ -34,7 +34,7 @@
 				array('label'=>'Alur Pendaftaran', 'url'=>array('/site/contact')),
 				array('label'=>'FAQ'),
 				array('label'=>'Login', 'url'=>array('/site/login'), 'visible'=>Yii::app()->user->isGuest),
-				array('label'=>'Sign Up', 'url'=>array('/user/index'), 'visible'=>Yii::app()->user->isGuest),
+				array('label'=>'Sign Up', 'url'=>array('/user'), 'visible'=>Yii::app()->user->isGuest),
 				array('label'=>'Menu Admin', 'visible'=>!Yii::app()->user->isGuest, 'items'=>array(
 					array('label'=>'Pendaftaran', 'items'=>array(
 						array('label'=>'List Informasi Pendaftar'),

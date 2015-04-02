@@ -37,17 +37,13 @@
 		<?php echo $form->error($model,'judul'); ?>
 	</div>
 	
-	<div class="row">
+	<div class="tinymce">
 		<?php echo $form->labelEx($model,'isi_konten'); ?>
-		<?php $this->widget('application.extensions.cleditor.ECLEditor', array(
+		<?php $this->widget('application.extensions.tinymce.ETinyMce', array(
             'model'=>$model,
             'attribute'=>'isi_konten',
-            'options'=>array(
-                'width'=>206,
-                'height'=>320,
-                'useCSS'=>true,
-            ),
-            'value'=>$model->isi_konten,
+            'editorTemplate'=>'full',
+			'htmlOptions'=>array('rows'=>6, 'cols'=>50, 'class'=>'tinymce'),
         ));
 		?>
 		<?php echo $form->error($model,'isi_konten'); ?>
